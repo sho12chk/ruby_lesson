@@ -20,12 +20,16 @@ while true
   2:逃げる
 
   HEREDOC
+
   print "コマンドを入力："
   command = gets.to_i
   puts ""
+
   if command == 1
+
     puts "#{name}の攻撃"
     num = rand(4)
+
     if num == 0
       puts "会心の一撃！！！"
       damage = rand(10..15)
