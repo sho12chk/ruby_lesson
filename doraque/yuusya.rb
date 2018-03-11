@@ -8,8 +8,8 @@ class Yuusya
     self.special_attack = 6
   end
 
-  def slime_attack(slime_attack)
-    self.hp -= slime_attack
+  def yuusya_attack(slime)
+    slime.hp -= self.attack
   end
 
   def disp_hp
