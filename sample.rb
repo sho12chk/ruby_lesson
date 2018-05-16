@@ -1,59 +1,32 @@
-#配列を繰り返し処理で取り出す
-#=> 一度に大量のデータを扱えるようになる
-
-5.times {|i| puts i}
-
-
-user = ["Kamizato", "Suzuki", "Satou", "Yamada", "Suzuki"]
-
-puts "配列の要素数：#{user.length}"
-
-puts "---------------------------------"
-
-puts "each 通常"
-#Rubyの繰り返し処理でよく使用する
-user.each do |name|
-  puts name
-end
+#ターミナルにデータを出力する
+# puts "Hello World!!"
+# puts 1 + 3
+# puts "こんにちは！！！"
 
 
-puts "---------------------------------"
+# 変数
+# 値を入れておく箱のようなもの
+#
+# 変数をメリット
+# １：値を使いまわせる
+# ２：変更が楽
+# ３：値を覚える必要がなくなる
 
-puts "each 省略"
-#each文をもっとシンプルに書く
-user.each {|name| puts name}
+# 予約語
+# 変数として使ってはいけない文字
 
-puts "---------------------------------"
+# name = "Suzuki"
+#
+# # 変数展開
+# # 文字列の中で変数の値を出力する
+# num = 100
+#
+# puts "ユーザID:#{num}"
+# puts "#{name}さん、こんにちは"
+# puts "1 + 4 = #{1+4}"
 
-#数字を添えて繰り返し処理を実行
+radius = 100
 
-user.each.with_index do |name,i|
+ans = (radius ** 2) * 3.14
 
-  puts "会員No.#{i}：#{name}さん"
-
-end
-
-puts "---------------------------------"
-
-
-#開始する数字を固定して繰り返し処理を実行
-
-user.each.with_index(1) do |name,i|
-
-  puts "会員No.#{i}：#{name}さん"
-
-end
-
-puts "---------------------------------"
-i = 0
-
-while i < user.length
-  puts user[i]
-  i += 1
-end
-
-puts "---------------------------------"
-
-for num in 0..user.length
-  puts user[num]
-end
+puts "半径#{radius}cmの円の面積は#{ans}です。"
