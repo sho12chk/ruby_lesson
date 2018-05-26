@@ -14,38 +14,25 @@ puts user1[:email]
 puts user1[:tell]
 
 #値を取り出す方法
-puts "お名前：#{user1[:name]}"
+#puts "お名前：#{user1[:name]}"
 
-#Railsでは、ユーザが送信したデータを受け取るとき
-#ハッシュの形式でデータが送信される
-params1 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
-params2 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
-params3 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
-params4 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
+# Railsでは、ユーザが送信したデータを受け取るとき
+# ハッシュの形式でデータが送信される
+params = { name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
+params2 = { name: "Suzuki", email: "aaa@huga", tell: "09011112222" }
+params3 = { name: "Saitou", email: "bbb@huga", tell: "09011113333" }
+params4 = { name: "Yamada", email: "ccc@huga", tell: "09011114444" }
 
 #user_name = params[:name]
 #puts "#{user_name}さんがログインしています"
 
-
 #ハッシュは配列や繰り返し文と合わせることでより大量のデータを処理できるようになる
-
 #ハッシュを配列に格納する
-parameters = [params1, params2, params3, params4]
+parameters = [params, params2, params3, params4]
 
 parameters.each do |params|
   puts <<-TEXT
 
-  お名前：#{params[:name]}
-
-  TEXT
-end
-
-puts "---------------------------"
-
-parameters.each.with_index(10) do |params, i|
-  puts <<-TEXT
-
-  会員No.#{i}
   お名前：#{params[:name]}
   Eメール：#{params[:email]}
   電話番号：#{params[:tell]}
@@ -53,7 +40,26 @@ parameters.each.with_index(10) do |params, i|
   TEXT
 end
 
-puts "---------------------------"
+
+
+
+
+
+#
+# puts "---------------------------"
+#
+# parameters.each.with_index(10) do |params, i|
+#   puts <<-TEXT
+#
+#   会員No.#{i}
+#   お名前：#{params[:name]}
+#   Eメール：#{params[:email]}
+#   電話番号：#{params[:tell]}
+#
+#   TEXT
+# end
+#
+# puts "---------------------------"
 =begin
 users = [user1, user2, user3, user4, user5]
 

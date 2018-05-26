@@ -25,8 +25,16 @@
 # puts "#{name}さん、こんにちは"
 # puts "1 + 4 = #{1+4}"
 
-radius = 100
+# a = false ^ false
+#
+# puts a
+# p a
+#
+# radius = 10
 
-ans = (radius ** 2) * 3.14
+# 1010 => 10
+# 0100 => 4
+# 1110 => 14
 
-puts "半径#{radius}cmの円の面積は#{ans}です。"
+# puts (10^4)*3.14
+# puts 14*3.14
