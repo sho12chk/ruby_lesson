@@ -60,103 +60,101 @@ end
 # end
 #
 # puts "---------------------------"
-=begin
-users = [user1, user2, user3, user4, user5]
 
-users.each.with_index(1) do |user, i|
-  puts <<~TEXT
-
-      会員No.#{i}
-      お名前：#{user1[:name]}
-      Eメール：#{user1[:email]}
-      電話番号：#{user1[:tell]}
-
-  TEXT
-end
-
-
-
-#=> ユーザが情報を入力
-#=> 例）会員登録フォーム（お名前、Eメール、電話番号）
-#=> 送信ボタンを押すと、そのデータがハッシュの形式で送られてくる
-
-user1 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
-user2 = {name: "Emi", email: "hoge@huga", tell: "09011111111" }
-user3 = {name: "Masato", email: "hoge@huga", tell: "09011111111" }
-user4 = {name: "Yoko", email: "hoge@huga", tell: "09011111111" }
-user5 = {name: "Akihito", email: "hoge@huga", tell: "09011111111" }
-
-users = [user1, user2, user3, user4, user5]
-
-
-puts "------------------------"
-
-users.each do |user|
-  #ヒアドキュメント
-  puts <<~TEXT
-
-  お名前：#{user[:name]}
-  Eメール：#{user[:email]}
-  電話番号：#{user[:tell]}
-
-  -----------------------------
-  TEXT
-end
-
-
-
-
-
-#値を取り出すときはキーを指定してあげる
-puts "---------------------------"
-
-puts "お名前：#{user1[:name]}"
-puts "Eメール：#{user1[:email]}"
-puts "電話番号：#{user1[:tell]}"
-
-puts "---------------------------"
-
-#ヒアドキュメント
-#複数行の文字列を簡潔に出力することができる
-
-@text = <<~HEREDOC
-
-お名前：#{user1[:name]}
-Eメール：#{user1[:email]}
-電話番号：#{user1[:tell]}
-
-HEREDOC
-
-puts @text
-
-puts "---------------------------"
-
-users = [user1, user2, user3, user4, user5]
-
-users.each.with_index do |user, i|
-  puts <<~TEXT
-
-      会員No.#{i+1}
-      お名前：#{user1[:name]}
-      Eメール：#{user1[:email]}
-      電話番号：#{user1[:tell]}
-
-  TEXT
-end
-
-puts "---------------------------"
-
-users = [user1, user2, user3, user4, user5]
-
-users.each.with_index(1) do |user, i|
-  puts <<~TEXT
-
-      会員No.#{i}
-      お名前：#{user1[:name]}
-      Eメール：#{user1[:email]}
-      電話番号：#{user1[:tell]}
-
-  TEXT
-end
-
-=end
+# users = [user1, user2, user3, user4, user5]
+#
+# users.each.with_index(1) do |user, i|
+#   puts <<~TEXT
+#
+#       会員No.#{i}
+#       お名前：#{user1[:name]}
+#       Eメール：#{user1[:email]}
+#       電話番号：#{user1[:tell]}
+#
+#   TEXT
+# end
+#
+#
+#
+# #=> ユーザが情報を入力
+# #=> 例）会員登録フォーム（お名前、Eメール、電話番号）
+# #=> 送信ボタンを押すと、そのデータがハッシュの形式で送られてくる
+#
+# user1 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
+# user2 = {name: "Emi", email: "hoge@huga", tell: "09011111111" }
+# user3 = {name: "Masato", email: "hoge@huga", tell: "09011111111" }
+# user4 = {name: "Yoko", email: "hoge@huga", tell: "09011111111" }
+# user5 = {name: "Akihito", email: "hoge@huga", tell: "09011111111" }
+#
+# users = [user1, user2, user3, user4, user5]
+#
+#
+# puts "------------------------"
+#
+# users.each do |user|
+#   #ヒアドキュメント
+#   puts <<~TEXT
+#
+#   お名前：#{user[:name]}
+#   Eメール：#{user[:email]}
+#   電話番号：#{user[:tell]}
+#
+#   -----------------------------
+#   TEXT
+# end
+#
+#
+#
+#
+#
+# #値を取り出すときはキーを指定してあげる
+# puts "---------------------------"
+#
+# puts "お名前：#{user1[:name]}"
+# puts "Eメール：#{user1[:email]}"
+# puts "電話番号：#{user1[:tell]}"
+#
+# puts "---------------------------"
+#
+# #ヒアドキュメント
+# #複数行の文字列を簡潔に出力することができる
+#
+# @text = <<~HEREDOC
+#
+# お名前：#{user1[:name]}
+# Eメール：#{user1[:email]}
+# 電話番号：#{user1[:tell]}
+#
+# HEREDOC
+#
+# puts @text
+#
+# puts "---------------------------"
+#
+# users = [user1, user2, user3, user4, user5]
+#
+# users.each.with_index do |user, i|
+#   puts <<~TEXT
+#
+#       会員No.#{i+1}
+#       お名前：#{user1[:name]}
+#       Eメール：#{user1[:email]}
+#       電話番号：#{user1[:tell]}
+#
+#   TEXT
+# end
+#
+# puts "---------------------------"
+#
+# users = [user1, user2, user3, user4, user5]
+#
+# users.each.with_index(1) do |user, i|
+#   puts <<~TEXT
+#
+#       会員No.#{i}
+#       お名前：#{user1[:name]}
+#       Eメール：#{user1[:email]}
+#       電話番号：#{user1[:tell]}
+#
+#   TEXT
+# end

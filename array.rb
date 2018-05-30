@@ -12,6 +12,23 @@ price_list = [1980, 300, 2980, 4260]
 puts "プライスリストを表示します"
 puts price_list
 
+
+# price_list2 = %w(1980 300 2980 4260)
+# puts price_list2
+#
+# price_list2.each{|price| puts "料金：#{price}"}
+#
+# price_list2 = %w(1980 300 2980 4260)
+#
+# price_list2.each.with_index(1) {|price, i| puts "料金#{i}：#{price}"}
+#
+# user_name = %w(鈴木 山下 佐藤)
+# puts user_name
+
+price_list3 = [1980, 300, 2980, 4260]
+puts "2000円以上の値段を出力"
+puts price_list3.select{|price| price >= 2000}
+
 # #正方形の面積を求める
 # dimensions = [
 #   [20,30],

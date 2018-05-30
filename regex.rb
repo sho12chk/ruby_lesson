@@ -1,3 +1,4 @@
+
 num = "abc12345def67890".gsub(/[^\d]/, "").to_i
 
 puts num
@@ -13,6 +14,10 @@ puts num3
 num4 = "3143~34333".slice(/\d+~\d+/).to_i
 
 puts num4
+
+num5 = "\[\"ruby\"\, \"java\"\, \"php\"\]".gsub(/[^\w^,]/, "")
+
+puts num5
 
 s = "3143~34333"
 
