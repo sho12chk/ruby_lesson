@@ -7,7 +7,7 @@ print "日付を入力："
 iday = gets.to_i
 
 #日付オブジェクトの作成
-this_day = Date.new(2018, 5, iday)
+this_day = Date.new(2018, imonth, iday)
 
 #年月日を変数に格納
 this_year = this_day.year
@@ -60,7 +60,7 @@ end
 puts <<~TEXT
 
 ＜作業詳細＞
-体験授業の講習会
+Ruby/Railsの講座開発
 以下のカリキュラムに関する授業、質疑応答
 
 Java/Spring/Hibernate

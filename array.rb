@@ -5,13 +5,89 @@
 # damage = 10
 # => 1つの値しか格納できない
 #
+#
 # 複数の値を格納したいときに配列を使用する
+#
 # 例）商品の値段リスト
 price_list = [1980, 300, 2980, 4260]
 
-puts "プライスリストを表示します"
-puts price_list
+# puts price_list[0]
+# puts price_list[1]
+# puts price_list[2]
+# puts price_list[3]
+# puts price_list.first
+# puts price_list.last
 
+# puts price_list
+#
+# price_list.each do |price|
+#   puts <<~TEXT
+#     商品　¥#{price}
+#   TEXT
+# end
+#
+# puts price_list.join(",")
+
+# high_price_list = []
+
+high_price_list = price_list.select do |price|
+  price > 2000
+end
+
+puts high_price_list
+
+p [1, 2, 3, 4, 5, 6].select { |n| n % 2 == 0 }
+
+# price_select = []
+#
+# # 100回処理を繰り返す
+# 100.times do |price|
+#   price_select << price
+# end
+#
+# p price_select
+
+
+# year_select = []
+#
+# 1900.upto(2000) do |price|
+#   price_select << price
+# end
+#
+# puts price_select
+
+
+# ('aaaa'..'zzzz').each do |char|
+#   p char
+# end
+
+
+# データ型
+# integer => 整数
+# float => 小数
+# string => 文字列
+# char => 文字（1文字）
+# boolean => true or false
+
+
+# pass = []
+#
+# ('aaaaaa'..'zzzzzz').each do |a|
+#   pass << a
+# end
+#
+# p pass.sample(3)
+#
+# names = ["suzuki", "saitou", "fnakoshi", nil]
+#
+# names.each do |name|
+#   puts name&.upcase
+# end
+
+# program = ["Ruby", "PHP", "Java"]
+#
+# puts program
+# puts program.join(",")
 
 # price_list2 = %w(1980 300 2980 4260)
 # puts price_list2
@@ -25,9 +101,9 @@ puts price_list
 # user_name = %w(鈴木 山下 佐藤)
 # puts user_name
 
-price_list3 = [1980, 300, 2980, 4260]
-puts "2000円以上の値段を出力"
-puts price_list3.select{|price| price >= 2000}
+# price_list3 = [1980, 300, 2980, 4260]
+# puts "2000円以上の値段を出力"
+# puts price_list3.select{|price| price >= 2000}
 
 # #正方形の面積を求める
 # dimensions = [
