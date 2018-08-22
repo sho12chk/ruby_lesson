@@ -1,17 +1,17 @@
-#ハッシュとは？
-#「キー」と「バリュー」がセットになったデータの集まり
-#複数のデータを格納することができるので配列とちょっと似ている
-
-#Ruby on Rails でよく使うハッシュ
-#HTML側で送信された情報を取得するために使用される
-#=> params = {user_name: "saitou", age: "30"}
-
-#ハッシュ
-user1 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111" }
-
-puts user1[:name]
-puts user1[:email]
-puts user1[:tell]
+# ハッシュとは？
+# 「キー」と「バリュー」がセットになったデータの集まり
+# 複数のデータを格納することができるので配列とちょっと似ている
+#
+# Ruby on Rails でよく使うハッシュ
+# HTML側で送信された情報を取得するために使用される
+# => params = {user_name: "saitou", age: "30"}
+#
+# ハッシュ
+# user1 = {name: "Kamizato", email: "hoge@huga", tell: "09011111111"}
+#
+# puts user1[:name]
+# puts user1[:email]
+# puts user1[:tell]
 
 #値を取り出す方法
 #puts "お名前：#{user1[:name]}"

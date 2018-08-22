@@ -1,9 +1,11 @@
-food2 = ["ステーキ", "寿司", "チャーハン"]
+names = ["suzuki", "saitou", "fnakoshi", nil]
 
-#pはデータの形式をそのまま出力させるやり方
-p food2
-
-
-food2.each do |food|
-  puts food
+names.each do |name|
+  puts name&.upcase
+  puts name&.upcase
+  puts name&.upcase
+  puts name&.upcase
+  puts name&.upcase
 end
+
+names.each{|name| name&.upcase}
