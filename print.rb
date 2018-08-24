@@ -1,0 +1,7 @@
+puts "私の"
+puts "名前は"
+puts "神里です。"
+puts "-----------"
+print "私の"
+print "名前は"
+print "神里です。"
