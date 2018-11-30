@@ -1,39 +1,14 @@
-require 'colorize'
-
-# if文
-# 条件分岐
-# もし〜だったら〜をする
+num = 10
 
 
-hp = 10
-damage = 20
-
-puts "勇者のHPは#{hp}だ"
-
-# hpから5を引く
-puts "モンスターの攻撃"
-hp = hp - damage
-
-
-if hp <= 0
-  # hpが0以下だったら"勇者は死んだ"と表示させる
-  puts "勇者は死んだ".red
-else
-  # 「hpが0以下」という条件以外だったら"勇者の残りHPは〜だ"と表示させる
-  puts "勇者の残りHPは#{hp}だ"
+# 通常の書き方
+if num >= 10
+  puts "大きい数です"
 end
 
-# hp = hp - damage
-# hp -= damage
-#
-# puts "勇者は#{damage}のダメージを受けた"
-#
-# if hp <= 0
-#   puts "勇者は死んだ"
-# else
-#   if hp >= 5
-#     puts "勇者はピンピンしている"
-#   elsif hp >= 3
-#     puts "勇者は弱っている"
-#   end
-# end
+# 省略形
+puts "大きい数です" if num >= 10
+
+# 三項演算子
+# 条件式(true or false) ? trueの時に行いたい処理 : falseの時に行いたい処理
+puts num > 10 ? "10より大きいです" : "10より小さいです"

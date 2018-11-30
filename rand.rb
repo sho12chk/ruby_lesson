@@ -2,8 +2,6 @@ kougeki = ["会心の一撃", "通常攻撃", "通常攻撃", "通常攻撃"]
 
 action = kougeki.sample
 
-
-
 if action = "会心の一撃"
   damage = rand(10..15)
 else

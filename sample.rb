@@ -1,14 +1,5 @@
+user_list = ["佐藤", "鈴木", "山田"]
 
-require 'colorize'
+new_user_list = user_list.map{|user| user == "佐藤" ? user = "斎藤" : user}
 
-puts "データのインポートを開始します"
-
-sleep(3)
-
-num = rand(2)
-
-if num == 1
-  puts "インポートが成功しました".green
-else
-  puts "インポートが失敗しました".red
-end
+puts new_user_list
