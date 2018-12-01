@@ -11,20 +11,27 @@ class User
 
 end
 
+class Disp
 
-user = nil
-user2 = User.new("suzuki", 33)
-user3 = User.new(nil, nil)
+  def self.info(list)
+    text = ""
+    list.each do |data|
+      return "nilがあります" unless data.present?
 
+      text += <<~TEXT
+      お名前：#{data.name}
+      年齢：#{data.age}
+      TEXT
+    end
+    text
+  end
 
-p user.blank?
-p user.present?
-p user2.name
-p user2.age
-# p user2.hobby
-p user3.try(:name)
-p user3.try(:age)
-p user3.try(:hobby)
-p user3&.name
-p user3&.age
-p user3&.hobby
+end
+
+list = []
+
+list << user = nil
+list << user2 = User.new("suzuki", 33)
+list << user3 = User.new("saitou", 24)
+
+puts Disp.info(list)
