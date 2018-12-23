@@ -1,5 +1,6 @@
-user_list = ["佐藤", "鈴木", "山田"]
+puts "_________________"
+puts "メニューを選択してください"
 
-new_user_list = user_list.map{|user| user == "佐藤" ? user = "斎藤" : user}
+order = gets.chomp.to_i
 
-puts new_user_list
+count = gets.chomp.to_i
